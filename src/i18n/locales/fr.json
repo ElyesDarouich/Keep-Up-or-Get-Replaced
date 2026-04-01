@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "models": "Modèles",
+    "agents": "Agents de code",
+    "automation": "Automatisation",
+    "mcp": "Outils MCP",
+    "skills": "Skills",
+    "tokenTips": "Économiser tokens",
+    "apis": "APIs gratuites",
+    "sources": "Veille techno"
+  },
+  "hero": {
+    "tag": "Sans hype. Juste les outils.",
+    "title": "L'IA en 2026,",
+    "title2": "vraiment expliquée.",
+    "subtitle": "Un guide pratique pour les curieux qui veulent comprendre ce qui se passe avec l'IA — sans le bruit des influenceurs. Vrais outils, vrais setups, avis honnêtes.",
+    "cta": "Commencer",
+    "stat1": "Modèles couverts",
+    "stat2": "APIs gratuites",
+    "stat3": "Outils MCP",
+    "stat4": "Skills (slash commands)"
+  },
+  "models": {
+    "tag": "Les meilleurs pour coder",
+    "title": "Modèles de code",
+    "subtitle": "Les benchmarks ne mentent pas. Voici comment les meilleurs modèles se comparent sur de vraies tâches de code — pas sur des slides marketing.",
+    "benchmarkNote": "SWE-bench Verified : tâches d'ingénierie logicielle réelles. HumanEval : précision de génération de code.",
+    "cols": {
+      "model": "Modèle",
+      "provider": "Fournisseur",
+      "swe": "SWE-bench",
+      "humaneval": "HumanEval",
+      "context": "Contexte",
+      "free": "Gratuit"
+    },
+    "yes": "Oui",
+    "no": "Non",
+    "limited": "Limité",
+    "topPick": "Top choix",
+    "opensource": "Open Source",
+    "fast": "Rapide"
+  },
+  "agents": {
+    "tag": "Agents de code",
+    "title": "Qu'est-ce qu'un agent de code ?",
+    "subtitle": "Oublie l'autocomplétion. Les agents de code peuvent lire tes fichiers, exécuter du code, ouvrir ton navigateur, pousser vers GitHub, et itérer jusqu'à ce que la tâche soit terminée.",
+    "whatIs": {
+      "title": "Agent vs Copilot",
+      "copilot": "Un copilot suggère du code pendant que tu tapes. Tu fais encore tout toi-même.",
+      "agent": "Un agent prend une tâche et travaille de façon autonome : lit les fichiers, écrit du code, lance les tests, corrige les erreurs — tout seul."
+    },
+    "cols": {
+      "tool": "Outil",
+      "model": "Modèle",
+      "fileAccess": "Accès fichiers",
+      "browserControl": "Navigateur",
+      "githubInt": "GitHub",
+      "freeTier": "Gratuit",
+      "bestFor": "Idéal pour"
+    }
+  },
+  "automation": {
+    "tag": "Workflows automatisés",
+    "title": "C'est quoi l'automatisation de workflow ?",
+    "subtitle": "Au lieu de poser une question à la fois à l'IA, tu construis des systèmes où les agents travaillent ensemble — lisent du code, éditent des fichiers, cherchent sur le web, et commitent sur GitHub sans que tu touches à rien.",
+    "levels": {
+      "l1": {
+        "label": "Niveau 1 — Découverte",
+        "desc": "Tu utilises des outils IA comme ChatGPT ou Claude pour obtenir des réponses, générer du texte, résumer des documents. Tu es dans la boucle à chaque étape."
+      },
+      "l2": {
+        "label": "Niveau 2 — Usage quotidien",
+        "desc": "Tu utilises l'IA tous les jours pour coder, créer des workflows de prompts, intégrer des APIs. Tu commences à enchaîner les prompts."
+      },
+      "l3": {
+        "label": "Niveau 3 — Systèmes",
+        "desc": "L'IA ne te répond plus seulement — elle travaille avec toi. Lit tes fichiers, ouvre ton navigateur, pousse du code. Tu construis le système une fois, il tourne."
+      }
+    },
+    "mySetup": "Mon setup actuel",
+    "setupItems": [
+      "Claude Code lit et édite les fichiers en temps réel",
+      "Playwright ouvre et contrôle n'importe quel navigateur",
+      "GitHub MCP pousse du code, ouvre des PRs, examine les issues",
+      "Les agents swarm divisent les tâches et coordonnent en parallèle",
+      "Sequential-thinking raisonne étape par étape avant d'agir",
+      "PlantUML génère automatiquement des diagrammes d'architecture"
+    ]
+  },
+  "mcp": {
+    "tag": "Outils MCP",
+    "title": "MCP : le système de plugins de l'IA",
+    "subtitle": "MCP (Model Context Protocol) c'est comment tu donnes à l'IA accès au monde réel — tes fichiers, ton navigateur, ton GitHub, tes outils de design. Choisis ton setup ci-dessous.",
+    "selectLabel": "Choisir ton outil principal",
+    "install": "Commande d'installation",
+    "keyTools": "Fonctionnalités clés",
+    "useCase": "Idéal pour"
+  },
+  "skills": {
+    "tag": "Slash Commands",
+    "title": "Skills pour Claude Code",
+    "subtitle": "Les skills sont des slash commands qui donnent à Claude Code une expertise spécialisée. Tape /senior-backend et Claude devient un architecte backend. Voici ceux qui valent vraiment la peine.",
+    "howTo": {
+      "title": "Comment installer un skill",
+      "step1": "Crée le fichier à ~/.claude/skills/ton-skill.md",
+      "step2": "Ajoute ta persona/instructions dans le fichier markdown",
+      "step3": "Utilise /ton-skill dans n'importe quelle session Claude Code"
+    },
+    "categories": {
+      "engineering": "Ingénierie",
+      "advanced": "Avancé",
+      "sparc": "SPARC",
+      "github": "GitHub",
+      "agents": "Swarm / Agents",
+      "utility": "Utilitaire"
+    }
+  },
+  "apis": {
+    "tag": "APIs gratuites",
+    "title": "Les meilleures APIs gratuites pour faire tourner des modèles puissants",
+    "subtitle": "Tu n'as pas besoin de payer pour utiliser de vrais modèles IA. Ces fournisseurs te donnent de vraies limites de débit, des modèles puissants, et aucune carte bancaire requise.",
+    "highlight": "Pourquoi Nvidia NIM est le secret le mieux gardé du moment",
+    "highlightDesc": "Nvidia a construit une plateforme où tous les grands modèles IA tournent sur leur infrastructure GPU. Le tier gratuit te donne accès à plus de 100 modèles avec des limites généreuses — spécialisés par cas d'usage. Ce n'est pas encore très connu, mais c'est ce que les pros utilisent discrètement.",
+    "cols": {
+      "provider": "Fournisseur",
+      "models": "Modèles disponibles",
+      "rpmFree": "RPM gratuit",
+      "tpmFree": "TPM gratuit",
+      "bestFor": "Idéal pour",
+      "signup": "Inscription"
+    },
+    "nvidiaModels": {
+      "title": "Nvidia NIM — Modèles par cas d'usage",
+      "tag": "Choisis ton cas d'usage"
+    }
+  },
+  "sources": {
+    "tag": "Veille technologique",
+    "title": "Où je trouve mes infos",
+    "subtitle": "Tu n'as pas besoin de tout lire. Tu as besoin d'un système. Voici le mien — les comptes exacts, subreddits et repos qui font remonter le signal avant le bruit.",
+    "platforms": {
+      "twitter": "Twitter / X",
+      "reddit": "Reddit",
+      "instagram": "Instagram Reels",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "built": "Construit avec curiosité, pas avec du hype.",
+    "tagline": "Un guide de quelqu'un qui build dans cet espace — partageant ce qui fonctionne vraiment."
+  }
+}

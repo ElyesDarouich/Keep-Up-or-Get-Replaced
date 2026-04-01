@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "models": "Models",
+    "agents": "Coding Agents",
+    "automation": "Automation",
+    "mcp": "MCP Tools",
+    "skills": "Skills",
+    "tokenTips": "Token Tips",
+    "apis": "Free APIs",
+    "sources": "Stay Updated"
+  },
+  "hero": {
+    "tag": "No hype. Just tools.",
+    "title": "AI in 2026,",
+    "title2": "actually explained.",
+    "subtitle": "A practical guide for curious people who want to understand what's happening with AI — without the influencer noise. Real tools, real setups, honest takes.",
+    "cta": "Start exploring",
+    "stat1": "Models covered",
+    "stat2": "Free APIs",
+    "stat3": "MCP tools",
+    "stat4": "Skills (slash commands)"
+  },
+  "models": {
+    "tag": "Best for coding",
+    "title": "Coding Models",
+    "subtitle": "Benchmarks don't lie. Here's how the top models stack up on real coding tasks — not marketing slides.",
+    "benchmarkNote": "SWE-bench Verified: real-world software engineering tasks. HumanEval: code generation accuracy.",
+    "cols": {
+      "model": "Model",
+      "provider": "Provider",
+      "swe": "SWE-bench",
+      "humaneval": "HumanEval",
+      "context": "Context",
+      "free": "Free tier"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "limited": "Limited",
+    "topPick": "Top Pick",
+    "opensource": "Open Source",
+    "fast": "Fast"
+  },
+  "agents": {
+    "tag": "Coding Agents",
+    "title": "What are coding agents?",
+    "subtitle": "Forget autocomplete. Coding agents can read your files, run code, open your browser, push to GitHub, and iterate until the task is done. Here's how they compare.",
+    "whatIs": {
+      "title": "Agent vs Copilot",
+      "copilot": "A copilot suggests code as you type. You still do everything.",
+      "agent": "An agent takes a task and works autonomously: reads files, writes code, runs tests, fixes errors — on its own."
+    },
+    "cols": {
+      "tool": "Tool",
+      "model": "Model",
+      "fileAccess": "File access",
+      "browserControl": "Browser",
+      "githubInt": "GitHub",
+      "freeTier": "Free tier",
+      "bestFor": "Best for"
+    }
+  },
+  "automation": {
+    "tag": "Automation Workflows",
+    "title": "What is workflow automation?",
+    "subtitle": "Instead of asking AI one question at a time, you build systems where agents work together — reading code, editing files, searching the web, and committing to GitHub without you touching anything.",
+    "levels": {
+      "l1": {
+        "label": "Level 1 — Awareness",
+        "desc": "You use AI tools like ChatGPT or Claude to get answers, generate text, summarize documents. You're in the loop for every step."
+      },
+      "l2": {
+        "label": "Level 2 — Daily Usage",
+        "desc": "You use AI daily for coding help, prompting workflows, API integrations. You start chaining prompts together."
+      },
+      "l3": {
+        "label": "Level 3 — Systems",
+        "desc": "AI doesn't just answer you — it works with you. Reads your files, opens your browser, pushes code. You build the system once, it runs."
+      }
+    },
+    "mySetup": "My current setup",
+    "setupItems": [
+      "Claude Code reads and edits files in real time",
+      "Playwright opens and controls any browser",
+      "GitHub MCP pushes code, opens PRs, reviews issues",
+      "Swarm agents split tasks and coordinate in parallel",
+      "Sequential-thinking reasons step by step before acting",
+      "PlanUML generates architecture diagrams automatically"
+    ]
+  },
+  "mcp": {
+    "tag": "MCP Tools",
+    "title": "MCP: AI's plugin system",
+    "subtitle": "MCP (Model Context Protocol) is how you give AI access to the real world — your files, your browser, your GitHub, your design tools. Pick your setup below.",
+    "selectLabel": "Choose your main tool",
+    "install": "Install command",
+    "keyTools": "Key capabilities",
+    "useCase": "Best for"
+  },
+  "skills": {
+    "tag": "Slash Commands",
+    "title": "Skills for Claude Code",
+    "subtitle": "Skills are slash commands that give Claude Code specialized expertise. Type /senior-backend and Claude becomes a backend architect. Here are the ones actually worth installing.",
+    "howTo": {
+      "title": "How to install a skill",
+      "step1": "Create the file at ~/.claude/skills/your-skill.md",
+      "step2": "Add your persona/instructions in the markdown file",
+      "step3": "Use /your-skill in any Claude Code session"
+    },
+    "categories": {
+      "engineering": "Engineering",
+      "advanced": "Advanced",
+      "sparc": "SPARC",
+      "github": "GitHub",
+      "agents": "Swarm / Agents",
+      "utility": "Utility"
+    }
+  },
+  "apis": {
+    "tag": "Free API Providers",
+    "title": "Best free APIs to run powerful models",
+    "subtitle": "You don't need to pay to run serious AI models. These providers give you real rate limits, powerful models, and zero credit card required.",
+    "highlight": "Why Nvidia NIM is the current best-kept secret",
+    "highlightDesc": "Nvidia built a platform where every major AI model runs on their GPU infrastructure. Free tier gives you access to 100+ models with generous limits — specialized by use case. It's not well-known yet, but it's what professionals quietly use.",
+    "cols": {
+      "provider": "Provider",
+      "models": "Available models",
+      "rpmFree": "Free RPM",
+      "tpmFree": "Free TPM",
+      "bestFor": "Best for",
+      "signup": "Signup"
+    },
+    "nvidiaModels": {
+      "title": "Nvidia NIM — Models by use case",
+      "tag": "Pick your use case"
+    }
+  },
+  "sources": {
+    "tag": "Stay Updated",
+    "title": "Where I get my info",
+    "subtitle": "You don't need to read everything. You need a system. Here's mine — the exact accounts, subreddits, and repos that surface the signal before the noise.",
+    "platforms": {
+      "twitter": "Twitter / X",
+      "reddit": "Reddit",
+      "instagram": "Instagram Reels",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "built": "Built with curiosity, not hype.",
+    "tagline": "A guide from someone building in this space — sharing what actually works."
+  }
+}
