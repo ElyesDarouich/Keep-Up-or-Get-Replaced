@@ -10,6 +10,7 @@ import { SkillsSection } from './components/sections/SkillsSection';
 import { ApisSection } from './components/sections/ApisSection';
 import { SourcesSection } from './components/sections/SourcesSection';
 import { TokenTipsSection } from './components/sections/TokenTipsSection';
+import { PowerSetupSection } from './components/sections/PowerSetupSection';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <ModelsSection />
         <AgentsSection />
         <AutomationSection />
+        <PowerSetupSection />
         <MCPSection />
         <SkillsSection />
         <TokenTipsSection />

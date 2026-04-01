@@ -6,6 +6,7 @@ const navItems = [
   { key: 'models', href: '#models' },
   { key: 'agents', href: '#agents' },
   { key: 'automation', href: '#automation' },
+  { key: 'powerSetup', href: '#power-setup' },
   { key: 'mcp', href: '#mcp' },
   { key: 'skills', href: '#skills' },
   { key: 'tokenTips', href: '#token-tips' },
