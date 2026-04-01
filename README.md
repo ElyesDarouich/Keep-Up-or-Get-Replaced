@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# Keep Up or Get Replaced
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A practical, no-hype guide to AI in 2026 — built for beginners who want to understand what's actually happening with AI tools, models, and workflows.
 
-Currently, two official plugins are available:
+**Live site**: Dark-themed, bilingual (EN/FR), fully responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What's inside
 
-## React Compiler
+- **9 Coding Models** — ranked by real benchmarks (SWE-bench, HumanEval, LiveCodeBench)
+- **9 Coding Agents** — side-by-side comparison (Claude Code, Cursor, Windsurf, GitHub Copilot, Devin 2.0, Google Antigravity, etc.)
+- **3-Level Automation Workflow** — from manual to fully autonomous
+- **12 MCP Tools** — filterable by agent & category, with install commands
+- **40+ Skills / Slash Commands** — categorized with interactive detail popups
+- **Token-Saving Tips** — research-backed strategies (PLANNING.md, Repomix, AGENTS.md, Context7)
+- **Free APIs** — Groq, Nvidia NIM, GitHub Models rate limits & tiers
+- **Stay Updated** — curated Twitter, Reddit, GitHub, Instagram sources
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- React 18 + TypeScript + Vite 8
+- Tailwind CSS (via `@tailwindcss/vite`)
+- react-i18next (EN/FR)
+- lucide-react icons
+- Zero backend — fully static
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Build for production:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+npm run preview
 ```
+
+## License
+
+MIT
