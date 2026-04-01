@@ -360,6 +360,135 @@ claude -p "Generate release notes for v2.1"`,
     impactFr: 'Éviter les attaques supply chain sur ton agent',
     source: 'builder.io/blog/best-mcp-servers-2026',
   },
+  {
+    id: 'custom-skills',
+    icon: '⚡',
+    color: '#60a5fa',
+    title: 'Create custom slash commands in 2 min',
+    titleFr: 'Créer des slash commands custom en 2 min',
+    description: 'Drop a SKILL.md file in .claude/skills/your-skill/ with a name, description, and instructions. Use $ARGUMENTS for input. Add allowed-tools in frontmatter for bash execution. Invoke with /your-skill.',
+    descriptionFr: 'Dépose un fichier SKILL.md dans .claude/skills/ton-skill/ avec un nom, description et instructions. Utilise $ARGUMENTS pour l\'input. Invoque avec /ton-skill.',
+    category: 'workflow',
+    code: `# .claude/skills/fix-issue/SKILL.md
+---
+name: fix-issue
+description: Fix a GitHub issue
+---
+1. gh issue view $ARGUMENTS
+2. Search codebase for related code
+3. Implement fix, run tests
+4. Create PR with description
+
+# Usage: /fix-issue 1234`,
+    impact: 'Automate any repeatable workflow',
+    impactFr: 'Automatiser tout workflow répétitif',
+    source: 'code.claude.com/docs/en/skills',
+  },
+  {
+    id: 'dual-tool',
+    icon: '🔄',
+    color: '#34d399',
+    title: 'Dual-tool pattern: Cursor + Claude Code',
+    titleFr: 'Pattern dual-tool : Cursor + Claude Code',
+    description: 'The dominant 2026 dev pattern: Cursor/Copilot for inline completions + Claude Code for agentic multi-file tasks. Average session is 23 min (up from 4 min a year ago). 78% of sessions involve multi-file edits.',
+    descriptionFr: 'Le pattern dominant en 2026 : Cursor/Copilot pour les complétions inline + Claude Code pour les tâches agentiques multi-fichiers. Session moyenne de 23 min. 78% des sessions impliquent des éditions multi-fichiers.',
+    category: 'workflow',
+    code: `# Modern dev workflow (2026):
+Cursor/Copilot  → Inline completions, tab-tab
+Claude Code     → Multi-file refactors, agents
+Combined        → 10x faster than either alone
+
+# Writer/Reviewer pattern:
+Session 1: Implement feature (writer)
+Session 2: Review & test (reviewer)`,
+    impact: '78% of Claude Code sessions are multi-file',
+    impactFr: '78% des sessions Claude Code sont multi-fichiers',
+    source: 'claudefa.st/blog/guide/agents/agent-teams',
+  },
+  {
+    id: 'repomix-compress',
+    icon: '📦',
+    color: '#a78bfa',
+    title: 'Repomix --compress for giant repos',
+    titleFr: 'Repomix --compress pour les gros repos',
+    description: 'Repomix packs your entire codebase into a single LLM-friendly file. The --compress flag uses tree-sitter to reduce tokens while preserving structure. --token-count-tree shows token usage per folder.',
+    descriptionFr: 'Repomix condense toute ta codebase en un seul fichier LLM-friendly. Le flag --compress utilise tree-sitter pour réduire les tokens. --token-count-tree montre l\'usage par dossier.',
+    category: 'config',
+    code: `# Pack repo for LLM context:
+npx repomix --compress           # ~70% smaller
+npx repomix --token-count-tree   # Visualize usage
+npx repomix --split-output       # Auto-split for limits
+
+# Also runs as MCP server:
+npx repomix --mcp`,
+    impact: '~70% token reduction on large codebases',
+    impactFr: '~70% de réduction de tokens sur les grosses codebases',
+    source: 'repomix.com',
+  },
+  {
+    id: 'hook-types',
+    icon: '🪝',
+    color: '#06b6d4',
+    title: '4 hook types: command, http, prompt, agent',
+    titleFr: '4 types de hooks : command, http, prompt, agent',
+    description: 'Beyond shell commands: http hooks POST event data to URLs (Slack alerts, webhooks). Prompt hooks run single-turn LLM evaluation. Agent hooks spawn multi-turn agents with tool access. 24 hook events available.',
+    descriptionFr: 'Au-delà des commandes shell : les hooks http envoient les données d\'événement par POST (alertes Slack, webhooks). Les hooks prompt évaluent en un tour LLM. Les hooks agent lancent des agents multi-tours.',
+    category: 'hooks',
+    code: `# Hook types:
+"command"  → Shell script (most common)
+"http"     → POST to URL (Slack, webhook)
+"prompt"   → Single-turn LLM evaluation
+"agent"    → Multi-turn agent with tools
+
+# 24 events including:
+SessionStart, PreToolUse, PostToolUse,
+PermissionRequest, PreCompact, PostCompact,
+SubagentStart, FileChanged, CwdChanged...`,
+    impact: '24 hook events for total workflow control',
+    impactFr: '24 événements de hooks pour un contrôle total',
+    source: 'code.claude.com/docs/en/hooks-guide',
+  },
+  {
+    id: 'graphite-review',
+    icon: '📊',
+    color: '#fb923c',
+    title: 'Graphite — stacked PRs + AI review',
+    titleFr: 'Graphite — PRs empilées + revue IA',
+    description: 'Stacked PRs keep changes small and reviewable. Graphite\'s AI review layer auto-reviews each stack. Shopify reported 33% more PRs merged per developer. Macroscope v3 hits 98% precision on code review.',
+    descriptionFr: 'Les PRs empilées gardent les changements petits et revuables. La couche de revue IA de Graphite auto-review chaque stack. Shopify rapporte 33% de PRs merged en plus par développeur.',
+    category: 'workflow',
+    code: `# Stacked PR workflow with Graphite:
+gt create feature/auth-base     # Base PR
+gt create feature/auth-jwt      # Stacks on top
+gt create feature/auth-tests    # Stacks again
+
+# AI reviews each stack independently
+# 33% more PRs merged (Shopify data)`,
+    impact: '33% more PRs merged per dev (Shopify)',
+    impactFr: '33% de PRs merged en plus par dev (Shopify)',
+    source: 'dev.to/heraldofsolace/the-best-ai-code-review-tools-of-2026',
+  },
+  {
+    id: 'context7-docs',
+    icon: '📚',
+    color: '#10b981',
+    title: 'Context7 — 9,000+ libs, zero hallucination',
+    titleFr: 'Context7 — 9 000+ libs, zéro hallucination',
+    description: 'Context7 MCP injects up-to-date, version-specific docs directly into your agent\'s context. 9,000+ indexed libraries. Two tools: resolve-library-id + get-library-docs. Eliminates stale training data issues.',
+    descriptionFr: 'Context7 MCP injecte des docs à jour et spécifiques à la version directement dans le contexte de ton agent. 9 000+ bibliothèques indexées. Élimine les problèmes de données d\'entraînement obsolètes.',
+    category: 'config',
+    code: `# Install Context7 MCP:
+npx -y @context7/mcp-server
+
+# Auto-resolves library docs:
+"How do I use React 19 Server Actions?"
+→ Fetches React 19 official docs
+→ Injects into context
+→ Answer uses real API, not hallucinated`,
+    impact: '70-90% less hallucination on library usage',
+    impactFr: '70-90% moins d\'hallucination sur l\'utilisation des libs',
+    source: 'github.com/upstash/context7',
+  },
 ];
 
 export const powerCategories = [
